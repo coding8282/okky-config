@@ -1,0 +1,12 @@
+package org.okky.config;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+class ConfigResource {
+    @GetMapping
+    String index() {
+        return "okky-config server";
+    }
+}

@@ -1,0 +1,33 @@
+server:
+  port: 9000
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /okky-actuator
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: # required
+          username: # required
+          password: # required
+
+---
+
+spring:
+  profiles: prod
+
+logging:
+  level:
+    ROOT: ERROR
+  file: /var/log/okky/okky-config.log
