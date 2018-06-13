@@ -1,3 +1,8 @@
+logging:
+  level:
+    ROOT: ERROR
+  file: /var/log/okky/okky-config.log
+
 server:
   port: 9000
 
@@ -18,16 +23,6 @@ spring:
     config:
       server:
         git:
-          uri: # required
-          username: # required
-          password: # required
-
----
-
-spring:
-  profiles: prod
-
-logging:
-  level:
-    ROOT: ERROR
-  file: /var/log/okky/okky-config.log
+          uri: # required 개발용에서는 local git에 설정하는 것이 좋음
+          username:
+          password:
