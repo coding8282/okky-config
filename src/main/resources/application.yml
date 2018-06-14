@@ -23,6 +23,6 @@ spring:
     config:
       server:
         git:
-          uri: # required 개발용에서는 local git에 설정하는 것이 좋음
+          uri: # required. 개발용에서는 local git에 설정하는 것이 좋음 ex) file:/Users/coding8282/IdeaProjects/code/okky-config-store-dev
           username:
           password:
