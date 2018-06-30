@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 class ConfigResource {
     @GetMapping
     String index() {
-        return "okky-config server";
+        return "okky-config service";
     }
 }
