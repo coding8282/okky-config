@@ -10,3 +10,4 @@ nohup java -jar \
 --spring.cloud.config.server.git.username="$git_username" \
 --spring.cloud.config.server.git.password="$git_password" \
 > /dev/null 2> /dev/null < /dev/null &
+sleep 5s
