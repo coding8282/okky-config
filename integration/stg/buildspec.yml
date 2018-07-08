@@ -1,14 +1,10 @@
 version: 0.2
 
-env:
-  parameter-store:
-    SONAR_LOGIN: "/okky/codebuild/sonar.login"
-
 phases:
   build:
     commands:
       - aws s3 cp s3://config-okky-stg/settings.xml /root/.m2/settings.xml
-      - mvn clean install -P stg
+      - mvn clean install
 
 artifacts:
   files:
