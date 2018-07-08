@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - aws s3 cp s3://config-okky-stg/settings.xml /root/.m2/settings.xml
-      - mvn clean install sonar:sonar -Dsonar.login=$SONAR_LOGIN
+      - mvn clean install -P stg
 
 artifacts:
   files:
